@@ -1,29 +1,29 @@
 ---
-title: "Delete industryDataConnector"
-description: "Deletes an industryDataConnector object."
+title: "Delete inboundFlow"
+description: "Deletes an inboundFlow object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# Delete industryDataConnector
+# Delete inboundFlow
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
+Deletes an [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | **TODO: Provide applicable permissions.**   |
-| Delegated (personal Microsoft account) | **TODO: Provide applicable permissions.**   |
-| Application                            | **TODO: Provide applicable permissions.**   |
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,8 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-DELETE /external/industryData/dataConnectors/{industryDataConnectorId}/$ref
-DELETE /external/industryData/inboundFlows/{inboundFlowId}/dataConnector/$ref
+DELETE /external/industryData/inboundFlows/{inboundFlowId}/$ref
 ```
 
 ## Request headers
@@ -59,12 +58,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_industrydataconnector"
+  "name": "delete_inboundflow"
 }
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/external/industryData/dataConnectors/{industryDataConnectorId}
+DELETE https://graph.microsoft.com/beta/external/industryData/inboundFlows/{inboundFlowId}
 ```
 
 ### Response

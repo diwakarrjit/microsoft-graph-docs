@@ -17,10 +17,10 @@ Represents a named collection of individual roles.
 
 ## Methods
 
-| Method                                                                       | Return type                                                                                 | Description                                                                                            |
-| :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [List roleGroups](../api/industrydata-industrydatatenant-list-rolegroups.md) | [microsoft.graph.industryData.roleGroup](../resources/industrydata-rolegroup.md) collection | Get a list of the [roleGroup](../resources/industrydata-rolegroup.md) objects and their properties.    |
-| [Get roleGroup](../api/industrydata-rolegroup-get.md)                        | [microsoft.graph.industryData.roleGroup](../resources/industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](../resources/industrydata-rolegroup.md) object. |
+| Method                                                                        | Return type                                                                                 | Description                                                                                            |
+| :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [List roleGroups](../api/industrydata-industrydataroot-list-rolegroups.md)    | [microsoft.graph.industryData.roleGroup](../resources/industrydata-rolegroup.md) collection | Get a list of the [roleGroup](../resources/industrydata-rolegroup.md) objects and their properties.    |
+| [Get roleGroup](../api/industrydata-rolegroup-get.md)                         | [microsoft.graph.industryData.roleGroup](../resources/industrydata-rolegroup.md)            | Read the properties and relationships of a [roleGroup](../resources/industrydata-rolegroup.md) object. |
 
 ## Properties
 

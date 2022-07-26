@@ -1,29 +1,29 @@
 ---
-title: "List roleGroups"
-description: "Get a list of the roleGroup objects and their properties."
+title: "Get industryDataRoot"
+description: "Read the properties and relationships of an industryDataRoot object."
 author: "mlafleur"
 ms.localizationpriority: medium
 ms.prod: "industrydata"
 doc_type: apiPageType
 ---
 
-# List roleGroups
+# Get industryDataRoot
 
 Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [roleGroup](../resources/industrydata-rolegroup.md) objects and their properties.
+Read the properties and relationships of an [industryDataRoot](../resources/industrydata-industrydataroot.md) object.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | **TODO: Provide applicable permissions.**   |
-| Delegated (personal Microsoft account) | **TODO: Provide applicable permissions.**   |
-| Application                            | **TODO: Provide applicable permissions.**   |
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | EduAdministration.Read, EduAdministration.ReadWrite         |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /external/industryData/roleGroups
+GET /external/industryData
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [roleGroup](../resources/rolegroup.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [industryDataRoot](../resources/industrydata-industrydataroot.md) object in the response body.
 
 ## Examples
 
@@ -62,12 +62,12 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_rolegroup"
+  "name": "get_industrydataroot"
 }
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/external/industryData/roleGroups
+GET https://graph.microsoft.com/beta/external/industryData
 ```
 
 ### Response
@@ -79,7 +79,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.industryData.roleGroup)"
+  "@odata.type": "microsoft.graph.industryData.industryDataRoot"
 }
 -->
 
@@ -88,16 +88,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.industryData.roleGroup",
-      "displayName": "String",
-      "roles": [
-        {
-          "@odata.type": "microsoft.graph.industryData.roleReferenceValue"
-        }
-      ]
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.industryData.industryDataRoot"
+  }
 }
 ```

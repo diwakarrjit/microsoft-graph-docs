@@ -13,7 +13,7 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [referenceDefinition](../resources/industrydata-referencedefinition.md) with a `referenceType` of `RefUserMatchTarget`
+Represents a RefUserMatchTarget typed ReferenceDefinition.
 
 Inherits from [referenceValue](../resources/industrydata-referencevalue.md).
 

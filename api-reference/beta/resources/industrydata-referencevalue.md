@@ -26,9 +26,9 @@ This is an abstract type.
 
 ## Properties
 
-| Property | Type   | Description                                                                                            |
-| :------- | :----- | :----------------------------------------------------------------------------------------------------- |
-| code     | String | The code of the desired [referenceDefinition](../resources/industrydata-referencedefinition.md) entry. |
+| Property | Type   | Description                                        |
+| :------- | :----- | :------------------------------------------------- |
+| code     | String | The code of the desired referenceDefinition entry. |
 
 ## Relationships
 
