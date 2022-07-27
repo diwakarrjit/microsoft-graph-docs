@@ -10951,7 +10951,7 @@ items:
           - name: Get
             href: api/serviceannouncementattachment-get.md
     - name: IndustryData
-      href: resources/industrydata-industrydatatenant.md
+      href: resources/industrydata-industrydataroot.md
       expanded: true
       items:
         - name: Data Connectors
